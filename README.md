@@ -58,23 +58,23 @@ bb.evaluate(model,model2, holdout_data = df) # evaluate models' similarity on a 
 - ``bb.rebox()``:
 
    - ``clf``:
-     - ``bb.rebox(model, clf = clf): retrain into a different ``scikit-learn`` model type
-     - ``bb.rebox(model, clf = 'lookup', kind = 'exact'): retrain into a lookup table object
-     - ``bb.rebox(model, clf = 'lookup' kind = 'btree'): retrain into ``btree`` lookup object
+     - ``bb.rebox(model, clf = clf)``: retrain into a different ``scikit-learn`` model type
+     - ``bb.rebox(model, clf = 'lookup', kind = 'exact')``: retrain into a lookup table object
+     - ``bb.rebox(model, clf = 'lookup' kind = 'btree')``: retrain into ``btree`` lookup object
      
      
 - ``bb.lookup()``:
 
    - ``kind``:
-     - ``bb.lookup(dataset, kind = 'exact'): train a lookup table object
-     - ``bb.lookup(dataset, , kind = 'btree'): train a ``btree`` lookup object
+     - ``bb.lookup(dataset, kind = 'exact')``: train a lookup table object
+     - ``bb.lookup(dataset, , kind = 'btree')``: train a ``btree`` lookup object
    
       
 - ``bb.evaluate()``:
 
-   - ``kind``:
-     - ``bb.evaluate(model1, model2 , holdout_data = df, kind = 'dataset', metric = rmse, y_label = 'label'): evaluate on holdout dataset
-     - ``bb.evaluate(model1, model2 , kind = 'generated', metric = rmse): evaluate on generated data
+   - ``method``:
+     - ``bb.evaluate(model1, model2 , holdout_data = df, methon = 'dataset', metric = rmse, y_label = 'label')``: evaluate on holdout dataset
+     - ``bb.evaluate(model1, model2 , method = 'generated', metric = rmse)``: evaluate on generated data
        
     
    
@@ -97,7 +97,7 @@ Alpha version scope is to release basic functionalities as a MVP:
 
 - ``bb.lookup(dataset, kind = 'exact')
 
-- ``bb.evaluate(model1, model2 , holdout_data = df, kind = 'dataset', metric = rmse, y_label = 'label')
+- ``bb.evaluate(model1, model2 , holdout_data = df, method = 'dataset', metric = rmse, y_label = 'label')
 
 
 
