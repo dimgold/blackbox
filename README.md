@@ -92,12 +92,12 @@ Alpha version scope is to release basic functionalities as a MVP:
 - ``bb.unbox(model, modeltype='knn', method = 'whitebox', scope = ['minimal'])``
 - ``bb.unbox(model, modeltype='knn', method = 'whitebox', scope = ['maximal'])``
 
-- ``bb.rebox(model, clf = clf)
-- ``bb.rebox(model, clf = 'lookup', kind = 'exact')
+- ``bb.rebox(model, clf = clf)``
+- ``bb.rebox(model, clf = 'lookup', kind = 'exact')``
 
-- ``bb.lookup(dataset, kind = 'exact')
+- ``bb.lookup(dataset, kind = 'exact')``
 
-- ``bb.evaluate(model1, model2 , holdout_data = df, method = 'dataset', metric = rmse, y_label = 'label')
+- ``bb.evaluate(model1, model2 , holdout_data = df, method = 'dataset', metric = rmse, y_label = 'label')``
 
 
 
